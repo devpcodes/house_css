@@ -1,0 +1,54 @@
+.features {
+    font-size: 1.4rem;
+    width: 100%;
+    min-height: 65vh;
+    padding: 13rem 7rem 6rem 7rem;
+    margin: 0 auto;
+
+    &__content {
+        text-align: center;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 6rem 3rem 0 3rem;
+    }
+}
+
+.feature {
+    display: inline-block;
+    text-align: left;
+    margin: 0 0 7rem 0;
+    width: 420px;//calc((100% - 14rem)/3)
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    vertical-align: top;
+    @media only screen and (max-width: $bp-medium) {
+        width: 80%;
+    }
+
+    &__icon {
+        fill: $color-primary;
+        width: 4.5rem;
+        height: 4.5rem;
+
+        transform: translateY(-1rem);
+    }
+
+    &__header {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 2rem;
+    }
+
+    &__text {
+        display: inline-block;
+        font-size: 1.7rem;
+        text-align: left;
+        width: 316px;
+        margin-left: 6.5rem;
+        margin-top: -1rem;
+        @media only screen and (max-width: $bp-medium) {
+            width: 90%;
+        }
+    }
+}

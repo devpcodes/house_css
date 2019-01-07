@@ -1,0 +1,55 @@
+.realtors {
+    font-size: 1.4rem;
+    display: inline-block;
+    background-color: $color-secondary;
+    width: 31%;
+    min-height: 80vh;
+    padding-top: 5rem;
+    text-align: center;
+    position: relative;
+
+    @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+        min-height: 60vh;
+    }
+
+    &__heading {
+        display: block;
+        text-align: center;
+    }
+
+    &__content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    &__list {
+        display: inline-block;
+        width: 237px;
+    }
+
+    &__img {
+        display: inline-block;
+        width: 7rem;
+        border-radius: 50%;
+    }
+
+    &__details {
+        text-align: left;
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 1rem;
+        padding-left: 2rem;
+    }
+
+    &__box {
+        margin-top: 2rem;
+    }
+
+    &__sold {
+        text-transform: uppercase;
+        color: $color-grey-light-2;
+    }
+}

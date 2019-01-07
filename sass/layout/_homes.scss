@@ -1,0 +1,143 @@
+.homes {
+    color: #000;
+    background-color: #fff;
+    font-size: 0;
+    width: 100%;
+    min-height: 80vh;
+    display: inline-block;
+    padding: 15rem 15rem 5rem 15rem;
+    
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 7rem 7rem 2rem 7rem;
+    }
+
+    @media only screen and (max-width: $bp-large1660) {
+        padding: 10rem 10rem 5rem 10rem;
+    }
+
+    &__box {
+        margin-right: -10rem;
+    }
+
+    
+
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+}
+
+.home {
+    display: inline-block;
+    // width: 392px;
+    width: calc(33% - 10rem);
+    position: relative;
+    text-align: center;
+    font-size: 0;
+    margin-bottom: 10rem;
+    margin-right: 10rem;
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp-large1660) {
+        width: calc(50% - 10rem);
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        width: 80%;
+        margin-bottom: 5rem;
+    }
+
+    &__img {
+        display: inline-block;
+        width: 100%;
+    }
+
+    &__like {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: $color-primary;
+        display: inline-block;
+    }  
+    
+    &__heart {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    &__name {
+        display: inline-block;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        font-family: $font-display;
+        background-color: $color-secondary;
+        color: #fff;
+        width: 80%;
+        text-align: center;
+        // transform: translateY(-50%);
+        margin-top: -6rem;
+        z-index: 90;
+    }
+
+    &__content {
+        display: block;
+        background-color: $color-grey-light-1;
+        margin-top: -2rem;
+        font-size: 1.5rem;
+        z-index: 0;
+        padding-top: 5rem;
+        & p {
+            display: inline-block;
+        }
+    }
+
+    &__box {
+        font-size: 0;
+        margin: 5rem 0;
+        width: 80%;
+        margin: 0 auto;
+        display: inline-block;
+        text-align: left;
+    }
+
+    &__small {
+        font-size: 1.4rem;
+        display: inline-block;
+        width: calc((100% - 6rem) / 2 );
+        margin-bottom: 5rem;
+
+        & p {
+            margin-left: .8rem;
+            margin-top: .2rem;
+            vertical-align: top;
+        }
+    }
+
+    &__location {
+        margin-right: 5rem;
+    }
+    &__rooms {
+        text-align: center;
+    }
+    &__area {
+        margin-right: 5rem;
+        @media only screen and (max-width: $bp-large1660) {
+            margin-right: 6rem;
+        }
+
+    }
+
+    &__price {
+        text-align: right;
+        @media only screen and (max-width: $bp-large1660) {
+            text-align: center;
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        width: 100%;
+    }
+
+}
